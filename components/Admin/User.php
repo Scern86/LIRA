@@ -21,7 +21,7 @@ class User
     public function login($login,$password):bool
     {
         $result = false;
-        if($login=='aaasss' AND $password=='111'){
+        if($login=='test' AND $password=='test'){
             $this->cookie->setCookie('logged_in',1,time()+3600,'/admin');
             $this->is_logged_in = true;
             Login::getInstance()->saveLogin($this->session->getSSID(),111,$_SERVER['REMOTE_ADDR'],$_SERVER['HTTP_USER_AGENT']);
