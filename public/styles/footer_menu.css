@@ -1,0 +1,16 @@
+.footer_menu{
+	display:block;
+list-style: none;
+z-index:110;	
+}
+.footer_menu li{
+	color:#FFF;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid silver;
+}
+.footer_menu li a{
+	color:#FFF;
+	padding:2px;
+	font-weight:bold;
+}

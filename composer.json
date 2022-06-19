@@ -1,0 +1,25 @@
+{
+    "name": "scern/lira",
+    "description": "Lira PHP platform",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Scern\\Lira\\": "core/",
+            "Scern\\Lira\\Traits\\": "core/traits/",
+            "Scern\\Lira\\Interfaces\\": "core/interfaces/",
+            "Scern\\Lira\\Controllers\\": "controllers/",
+            "Scern\\Lira\\Components\\": "components/",
+            "Scern\\Lira\\Components\\Admin\\Models\\": "components/Admin/models/",
+            "Scern\\Lira\\Data\\": "core/data/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Scern",
+            "email": "scern86@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

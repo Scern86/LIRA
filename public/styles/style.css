@@ -1,0 +1,125 @@
+.slicknav_menu {
+	display:none;
+}
+@media screen and (max-width: 20em) {
+	nav{
+		background:#fff;
+		border-radius:0;
+		padding:0;		
+	}	
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+ul#menu,
+ul#menu li,
+ul#menu ul {
+margin: 0;
+border: 0 none;
+padding: 0;
+width: 100%; 
+list-style: none;
+z-index:110;
+
+}
+ul#menu:after {
+clear: both;
+display: block;
+font: 1px/0px serif;
+content: ".";
+height: 0;
+visibility: hidden;
+}
+ul#menu li {
+float: left; 
+display: block !important; 
+display: inline; 
+position: relative;
+}
+ul#menu a {
+border: 2px solid #28a745;
+/*border-right-color: #444;
+border-bottom-color: #444;*/
+padding:15px;
+border-radius:7px;
+margin:2px;
+display: block;
+background: #FFF;
+color:#28a745;
+/*background: linear-gradient(to top, #50040b 0%, #ca2737 36%, #88010d 100%);*/
+font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+height: auto !important;
+height: 1%; 
+}
+ul#menu a:hover,
+ul#menu li:hover a,
+ul#menu li.iehover a {
+background: #FFF;
+color: #dc3545;
+border: 2px solid #dc3545;
+cursor:pointer;
+}
+ul#menu li:hover li a,
+ul#menu li.iehover li a {
+background: #FFF;
+color: #28a745;
+}
+ul#menu li:hover li a:hover,
+ul#menu li:hover li:hover a,
+ul#menu li.iehover li a:hover,
+ul#menu li.iehover li.iehover a {
+background: #FFF;
+color: #dc3545;
+border: 2px solid #dc3545;
+}
+ul#menu li:hover li:hover li a,
+ul#menu li.iehover li.iehover li a {
+background: #FFF;
+color: #28a745;
+}
+ul#menu li:hover li:hover li a:hover,
+ul#menu li:hover li:hover li:hover a,
+ul#menu li.iehover li.iehover li a:hover,
+ul#menu li.iehover li.iehover li.iehover a {
+background: #FFF;
+color: #dc3545;
+border: 2px solid #dc3545;
+}
+ul#menu li:hover li:hover li:hover li a,
+ul#menu li.iehover li.iehover li.iehover li a {
+background: #FFF;
+color: #28a745;
+}
+ul#menu-v li:hover li:hover li:hover li a:hover,
+ul#menu li.iehover li.iehover li.iehover li a:hover {
+background: #FFF;
+color: #dc3545;
+border: 2px solid #dc3545;
+}
+ul#menu ul,
+ul#menu ul ul,
+ul#menu ul ul ul {
+display: none;
+position: absolute;
+top: 0;
+left: 100%;
+}
+ul#menu li:hover ul ul,
+ul#menu li:hover ul ul ul,
+ul#menu li.iehover ul ul,
+ul#menu li.iehover ul ul ul {
+display: none;
+}
+ul#menu li:hover ul,
+ul#menu ul li:hover ul,
+ul#menu ul ul li:hover ul,
+ul#menu li.iehover ul,
+ul#menu ul li.iehover ul,
+ul#menu ul ul li.iehover ul {
+display: block;
+}
